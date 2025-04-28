@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Level 5 - Painted Secrets</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <style>
+        .hidden-flag::after {
+            content: "flag{hidden_in_css}";
+            display: block;
+            color: transparent;
+            background-color: transparent;
+            user-select: text;
+        }
+
+        .phantom {
+            visibility: hidden;
+        }
+    </style>
+</head>
+<body>
+    <div class="center-container">
+        <h1>Level 5: Painted Secrets</h1>
+        <p>True secrets never scream — they whisper to those who know how to listen. 🎭</p>
+
+        <p>In the world of illusions, the brightest lights often hide the darkest shadows. To find what eludes, you must become one with the unseen.</p>
+
+        <p>Step lightly, for the veil between the known and unknown is thin, and every move you make can shift it — revealing or concealing all that lies within.</p>
+
+        <p>Not all that glitters is gold, and not all that is hidden is beneath the surface. Some things must be uncovered with patience, others with sharp eyes that seek out what others overlook,Do you know <strong>sources</strong>-</p>
+
+        <p>Wander not where the eye easily roams, but where the unseen calls your curiosity...</p>
+
+        <p>And perhaps, just perhaps, in the quietest corner of your search, you will find what you seek.</p>
+
+        <form method="POST">
+            <input type="text" name="flag" placeholder="Trace the hidden symbol..." required>
+            <br><br>
+            <button type="submit">Reveal</button>
+        </form>
+
+        {% if message %}
+        <p style="color: crimson;">{{ message }}</p>
+        {% endif %}
+
+        <div class="hidden-flag"></div>
+        <div class="phantom">flag{this_is_a_fake_clue}</div>
+
+        <div class="eagle">
+            🦅 The silent guardian watches as seekers pass by... 🦅
+        </div>
+    </div>
+</body>
+</html>

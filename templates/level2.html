@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Level 2 - Ciphered Secrets</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Level 2: Shadows of the Caesar</h1>
+        <p>Long ago, a fragment of truth was hidden away, encrypted under layers of deception. </p>
+
+        <p>They say the truth now resides silently, tucked inside what seems ordinary to the careless eye.
+        Not all that is visible reveals its secrets at first glance.</p>
+
+        <p>Explore carefully. Examine the unseen layers, question the obvious, and remember — those who rush often miss what whispers only to the patient.</p>
+
+        <form method="POST">
+            <input type="text" name="flag" placeholder="Decipher the Secret..." required />
+            <button type="submit">Reveal</button>
+        </form>
+
+        {% if message %}
+            <p class="message">{{ message }}</p>
+        {% endif %}
+
+        <h2>Artifact Containing the Lost Words:</h2>
+
+        <p>Could the image hold more than meets the eye? Perhaps there is a message wrapped not in pixels, but in riddles waiting for a clever mind to unwrap.</p>
+
+
+        <img src="../static/st.png" alt="Echoes of the Past" />
+
+        <p>Hint: Those who decode the forgotten tongues shall walk through the gates unseen.</p>
+
+        <pre class="ascii-art">
+            🦅 Beneath wings of silence, secrets soar... 🦅
+            ░░░░░░░░░░░░░░░░░░░░
+            ░ Follow not the obvious ░
+            ░ Trust whispers, not shouts ░
+            ░░░░░░░░░░░░░░░░░░░░
+        </pre>
+
+        <p>Sometimes the answers lie not in grand gestures, but in the smallest of distortions... Happy hunting, seeker of the ciphered flame. 🔥</p>
+    </div>
+</body>
+</html>

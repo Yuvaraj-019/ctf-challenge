@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Level 8 - The Robotic Enigma</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Level 8: The Robotic Enigma</h1>
+        <p>The machines have long since stopped speaking in plain language, but their whispers remain… hidden, encoded, waiting for the curious to uncover them. 🔍</p>
+
+        <p>Behind every door lies a trail. Behind every line of code, a trace of the past. </p>
+
+        <p>The robots of the digital world know things we cannot see. They speak in symbols, encrypted messages, and commands. They hide their secrets where only the bold dare to look. A single clue has been left in their wake, but it’s tucked away in a place that only the most observant will find — the <strong>robots.txt</strong> file.</p>
+
+        <p>But do not be fooled — the trail is not obvious. It is concealed beneath layers of noise, disguised in plain sight. The robots know what you seek, but will you find it before they erase their tracks?</p>
+
+        <form method="POST">
+            <input type="text" name="flag" placeholder="Uncover the robotic secret..." required>
+            <button type="submit">Submit</button>
+        </form>
+
+        {% if message %}
+            <div class="message">{{ message }}</div>
+        {% endif %}
+
+        <p>The trail lies in the <strong>robots.txt</strong>. Have you dared to listen to the whispers left behind by those who are programmed to hide?</p>
+
+        <p>They say the machines leave no footprints. But if you know where to look, you might just find a hidden path leading you to the truth.</p>
+
+        <p>Only those who know how to read between the lines of automation will find what remains buried. Will you hear the robots’ secret, or will you miss the subtle clues they’ve left for the worthy?</p>
+    </div>
+</body>
+</html>

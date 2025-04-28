@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Level 7 - Secrets in the Header</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>🔍 Level 7: The Hidden Echoes</h1>
+        <p>In the vast <strong>network</strong> of invisible threads, there are whispers — secrets carried silently, hidden in the invisible currents of data. 🕵️‍♂️</p>
+
+        <p>Sometimes, the greatest secrets lie not within the body of an item, but in the messages carried **outside of view**. You might think you’ve searched every corner, but the true answer is hidden in a place overlooked by many — a place where only the curious will venture.</p>
+
+        <p>Trust not what meets the eye, but what remains beyond the surface. A shadow lurks within the confines of an HTTP header, waiting for the one who dares to seek it. 🦸‍♂️</p>
+
+        <form method="POST">
+            <input type="text" name="flag" placeholder="Decipher the hidden message..." required>
+            <button type="submit">Reveal</button>
+        </form>
+
+        {% if message %}
+            <div class="message">{{ message }}</div>
+        {% endif %}
+
+        <p>The flag isn’t buried deep. It waits for those who understand the language of headers. Seek what is invisible, yet integral.</p>
+
+        <p>Some say it’s in the **response <strong>header</strong>**, a place where others fail to look. Could this be the key to your next step? Only those who think differently will succeed.</p>
+
+        <p>The past tells its secrets in silence — find what speaks only to the patient and vigilant.</p>
+    </div>
+</body>
+</html>

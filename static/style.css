@@ -1,0 +1,69 @@
+body {
+    background-color: #0d0d0d;
+    color: #00ff00;
+    font-family: 'Courier New', Courier, 'Times New Roman', Times, serif, monospace;
+
+    text-align: center;
+    padding: 30px;
+}
+/* more fake */
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #111;
+    border: 1px solid #00ff00;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px #00ff00;
+}
+
+input[type="text"] { /* flag{css_hiden_flag} */
+    background-color: black;
+    color: #00ff00;
+    border: 1px solid #00ff00;
+    padding: 10px;
+    width: 80%;
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+button {
+    background-color: black;
+    color: #00ff00;
+    border: 1px solid #00ff00;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}/* flag{css_hiddn_flag} */
+
+button:hover {
+    background-color: #00ff00;
+    color: black;
+}
+
+.message {
+    margin-top: 10px;
+    color: #ff3333;
+    font-weight: bold;
+}
+
+.ascii-art {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #00ff00;
+    white-space: pre;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 45vh; /* You can adjust to 100vh if you want full hide this = /* flag{css_hidden_flag} */ height */
+}
+/* some random */
+.center-image {
+    max-width: 100%;
+    height: 500px;
+    object-fit: contain;
+}

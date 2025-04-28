@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Level 9: The Hidden URL Encoded Flag</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <style>
+        #hidden-link {
+            display: none;
+        }
+
+        #hint {
+            margin-top: 20px;
+        }
+
+        #hint button {
+            background-color: #f1f1f1;
+            border: 1px solid #ccc;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        #hint button:hover {
+            background-color: #ddd;
+        }
+
+        .error-message {
+            color: red;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>🔍 Level 9: The Hidden URL Encoded Flag</h1>
+        <p>The answer isn't always where you can see it. Sometimes, it's buried in the depths of an <strong>invisible</strong> link. 🧐</p>
+
+        <p>Tip: In the world of the web, even the most concealed things can tell you everything. A URL is no ordinary string of characters... What you see might not be what you get. 💻</p>
+
+        <p><strong>Here's a little riddle:</strong> Where would you hide something if it needed to remain unseen but still be found? The answer might be closer than you think.</p>
+
+        <!-- Hidden Link to the path with the URL Encoded flag -->
+        <a id="hidden-link" href="/hidden?data=%66%6c%61%67%7b%75%72%6c%5f%65%6e%63%6f%64%65%64%7d">
+        </a>
+
+        <div id="hint">
+            <button class="hint-button" onclick="showHint()">Get a Clue!</button>
+        </div>
+
+        <form method="POST" action="/level9">
+            <input type="text" name="flag" placeholder="Enter your flag here" required>
+            <button type="submit">Submit Flag</button>
+        </form>
+
+
+        {% if message %}
+            <div class="error-message">{{ message }}</div>
+        {% endif %}
+    </div>
+
+    <script>
+
+        function showHint() {
+            alert("Look at the source or inspect the HTML code for the URL link. The encoded clue is hiding in plain sight...");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Level 1 - Base64</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Level 1: Base64 Labyrinth</h1>
+        <p>Advancement is reserved for those who uncover secrets buried beyond the obvious. </p>
+
+        <form method="POST">
+            <input type="text" name="flag" placeholder="Summon the Hidden Key..." required />
+            <button type="submit">Unlock</button>
+        </form>
+
+        {% if message %}
+            <p class="message">{{ message }}</p>
+        {% endif %}
+
+        <p>Curious minds might try whispering <strong>showhint()</strong> into the shadows of the console...</p>
+
+        <div class="image-container">
+    <img src="../static/st.png" alt="A Whisper in the Noise" class="center-image" />
+</div>
+
+    </div>
+
+    <script>
+        // Secrets are often hidden where few dare to look. Invoke the forgotten spell (showhint()).
+        function showhint() {
+            console.log('ZmxhZ3tCYXNlNjRfaGlkZGVufQ=='); // Base64 encoded flag
+        }
+    </script>
+</body>
+</html>

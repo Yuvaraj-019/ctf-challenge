@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Level 10 - JS Obfuscation</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Level 10: JS Obfuscation</h1>
+        <p>The flag is hidden in the JavaScript code. Can you find it?</p>
+        <form method="POST">
+            <input type="text" name="flag" placeholder="Enter flag here" required>
+            <button type="submit">Submit</button>
+        </form>
+        {% if message %}
+            <div class="message">{{ message }}</div>
+        {% endif %}
+    </div>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hint in comment</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="center-container">
+        <h1> Level 4: Silent Murmurs</h1>
+        <p>In a world drowning in noise, only the patient ear catches the whisper. </p>
+
+        <p>Beyond the visible, between the obvious, lies a truth scribbled in silence. Those who merely glance shall walk away blind.
+        Only those who linger between the breaths of code shall glimpse the hidden relic.</p>
+
+        <p>Every great secret wears the mask of simplicity... but do not be fooled. Not every treasure is buried deep — some hide in plain sight, shrouded only by our own distractions. </p>
+
+        <form method="POST">
+            <input type="text" name="flag" placeholder="Whisper the forgotten code..." required>
+            <br><br>
+            <button type="submit">Unlock</button>
+        </form>
+
+        <!-- Within the folds of silence, echoes remain... -->
+        <!-- Legends spoke of a flag once hidden here... -->
+        <!-- Look deeper. Ignore the noise. Trust your instincts. -->
+        <!-- flag{hidden_in_html} -->
+        <!-- Missteps often lead to false clues. Stay steady. -->
+        <!-- flag{hidden_in_comments} -->
+        <!-- Perhaps what you seek is already before your eyes... -->
+
+        {% if message %}
+        <p style="color: crimson;">{{ message }}</p>
+        {% endif %}
+
+        <div class="eagle">
+            🦅 The silent watcher sees what others miss... 🦅
+        </div>
+    </div>
+</body>
+</html>

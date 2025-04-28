@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Level 3 - ROT13ROT-13 Cipher</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Level 3: The Whispered Cipher</h1>
+        <p>Legends tell of a hidden script, encrypted by ancient forces who speak not in words, but in shifts and echoes... </p>
+
+        <p>Among the silent chambers of your very own browser, a secret slumbers — untouched, unseen by the careless wanderer.</p>
+
+        <p>Only those who seek between the folds of memory itself shall awaken what lies encoded. The key awaits, entangled in the simplest of shifts. do you know= "ROT-13 Cipher"</p>
+
+        <form method="POST">
+            <input type="text" name="flag" placeholder="Unlock the Forgotten Spell..." required />
+            <button type="submit">Unveil</button>
+        </form>
+
+        {% if message %}
+            <p class="message">{{ message }}</p>
+        {% endif %}
+
+        <p>Some say the past clings quietly inside your <strong>local storage</strong>... Will you dare to reach into the abyss and retrieve it?</p>
+
+        <pre class="ascii-art">
+            <img src="/static/st.png" alt="Specter of Secrets" />
+        </pre>
+
+        <p>Hint: The past speaks through distortion — what seems strange, once flipped, may reveal itself as familiar truth.</p>
+
+        <p> final whisper: not everything is scrambled forever. Some locks open by shifting the letters of fate.</p>
+    </div>
+
+    <script>
+        // Somewhere in the folds of time, a cipher was crafted. It still lingers, waiting for a keen eye.
+        localStorage.setItem('encodedFlag', 'synt{EBG13_vf_sbery}'); // ROT13 encoded flag
+
+        // Listen carefully: The key rests not in plain sight but within the silent archives of your browser.
+        console.log('The flag slumbers within the local storage... Seek and you shall find.');
+    </script>
+</body>
+</html>
