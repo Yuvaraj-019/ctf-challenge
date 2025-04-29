@@ -28,8 +28,8 @@ Test your technical skills, logical thinking, and investigative instincts across
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/your-ctf-repo.git
-   cd your-ctf-repo
+   git clone https://github.com/Yuvaraj-019/ctf-challenge.git
+   cd ctf-challenge
    ```
 
 2. Install required Python packages:
